@@ -2,6 +2,9 @@
 
 #include <stdbool.h>
 
+#ifndef STACK_H
+#define STACK_H
+
 typedef struct node {
   int data;
   struct node *next;
@@ -16,3 +19,6 @@ void push(int element, stack *s);
 int pop(stack *s);
 bool empty(stack *s);
 bool full(stack *s);
+
+
+#endif 
